@@ -11,11 +11,21 @@ const hostname = 'localhost'
 app.use(express.urlencoded({force:true}))
 app.use(express.json())
 app.use(express.static('public'))
-/* -------------config express------------ */
+
+/* -------------config handlebars------------ */
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
+
 /* --------------------------------------- */
 
+app.get('/listar', async (req,res)=>{
+    const dados = await Usuario.findAll({raw:true})
+    console.log(dados)
+    res.render('lista',{valor: dados})
+})
+app.get('/',(req,res)=>{
+    res.render('home')
+})
 
 
 
