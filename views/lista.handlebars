@@ -1,8 +1,18 @@
-<h1>Lista de dados</h1>
-<hr>
-{{#each valor}}
-<p>Identificador: {{this.id}}</p>
-<p>Nome: {{this.nome}}</p>
-<p>Número Inteiro Favorito: {{this.numero_inteiro_favorito}}</p>
-<hr>
+<link rel="stylesheet" href="/css/lista.css">
+<h1>Lista de Verduras</h1>
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Verduras</th>
+        <th>Quantidade</th>
+        <th>Preço Unitário</th>
+    </tr>
+{{#each valores}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.verduras}}</td>
+        <td>{{this.qntd}}</td>
+        <td>{{this.preco_unit}}</td>
+    </tr>
 {{/each}}
+</table>
