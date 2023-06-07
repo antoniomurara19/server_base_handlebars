@@ -19,6 +19,7 @@ h1{
     color: #000;
     text-align: center;
     font-size:4rem;
+    cursor: default;
 }
 table,th,td{
     border: 1px solid #000;
@@ -35,4 +36,23 @@ td{
     font-size: 1.5rem;
     background: #37FF00;
     color: #000;
+}
+nav{
+    background: #7782c2;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: #fff;
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center;
+}
+a:hover{
+    background: #000;
+    transition: all .3s linear;
+}
+a:hover nav{
+    background: #fff;
+    transition: all .3s linear;
 }

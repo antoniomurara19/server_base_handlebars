@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/css/pesquisa.css">
 <h1>Pesquise um produto na loja:</h1>
 <br>
 <form action="/pesquisar" method="post">
@@ -6,3 +7,20 @@
 <br><br>
 <button type="submit">Pesquisar</button>
 </form>
+<br><br>
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Verduras</th>
+        <th>Quantidade</th>
+        <th>Preço Unitário</th>
+    </tr>
+{{#if valor}}
+    <tr>
+        <td>{{valor.id}}</td>
+        <td>{{valor.verduras}}</td>
+        <td>{{valor.qntd}}</td>
+        <td>{{valor.preco_unit}}</td>
+    </tr>
+{{/if}}
+</table>

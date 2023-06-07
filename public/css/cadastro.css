@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1{
+    font-size: 5rem;
+    background: #E8D4CC;
+    width: 100vw;
+    cursor: default;
+    text-align: center;
+}
+nav{
+    background: #7782c2;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: #fff;
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center;
+}
+a:hover{
+    background: #000;
+    transition: all .3s linear;
+}
+a:hover nav{
+    background: #fff;
+    transition: all .3s linear;
+}
